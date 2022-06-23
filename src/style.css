@@ -1,0 +1,138 @@
+body {
+    background-color: white;
+  }
+  .stripe_umbrella { 
+    height: 500px;
+    width: 500px;
+    padding: 50px;
+    margin: auto;}
+  
+  h1 {
+    font-size: 100px;
+    letter-spacing: 50px;
+    color: black;
+    font-family: 'Codystar';
+  }
+  
+    
+  .bill1 {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    
+  }
+  
+  .rain div {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      display: inline-block;
+      position: relative;
+      
+      -webkit-animation: rain 5s infinite  linear;
+      -moz-animation: rain 5s infinite  linear;
+  }
+  .rain div:nth-child(5n+5) {
+  
+      -webkit-animation-delay: .75s;
+      -moz-animation-delay: .75s;
+  }
+  .rain div:nth-child(3n+2) {
+  
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+  }
+  .rain div:nth-child(2n+5) {
+  
+      -webkit-animation-delay: 2s;
+      -moz-animation-delay: 2s;
+  }
+  
+  .rain div:nth-child(3n+10) {
+  
+      -webkit-animation-delay: 2.5s;
+      -moz-animation-delay: 2.5s;
+  }
+  .rain div:nth-child(7n+2) {
+  
+      -webkit-animation-delay: 3s;
+      -moz-animation-delay: 3s;
+  }
+  .rain div:nth-child(4n+5) {
+  
+      -webkit-animation-delay: 3.25s;
+      -moz-animation-delay: 3.25s;
+  }
+  .rain div:nth-child(3n+7) {
+  
+      -webkit-animation-delay: 4s;
+      -moz-animation-delay: 4s;
+  }
+  
+  @-webkit-keyframes rain {
+    0% {
+      opacity: 1;
+  
+      -webkit-transform: translate(0, 0px) rotateZ(0deg);
+    }
+    75% {
+      opacity: 1;
+  
+      -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+    }
+    100% {
+      opacity: 0;
+  
+      -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+    }
+  }
+  @-moz-keyframes rain {
+    0% {
+      opacity: 1;
+      
+      -webkit-transform: translate(0, 0px) rotateZ(0deg);
+    }
+    75% {
+      opacity: 1;
+     
+      -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+    }
+    100% {
+      opacity: 0;
+      
+      -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .rain div{
+    height: 50px;
+    width: 50px;
+  }
+    h1 {
+      font-size: 25px;
+      letter-spacing: 5px;
+    }
+    .stripe_umbrella {
+      padding: 20px;
+      height: 250px;
+      width: 250px;
+    }
+    }
+
+#amount {
+  font-size: 100px;
+  font-family: 'Codystar';
+}
+
+#question{
+    font-size: 50px;
+    font-family: 'Codystar';
+}
+
+#monthly {
+  font-size: 50px;
+  font-family: 'Codystar';
+}
