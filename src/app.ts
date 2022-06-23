@@ -9,6 +9,7 @@ inputBox!.addEventListener('keydown', function (e) {
         const monthly = document.getElementById("monthly") as HTMLInputElement;
         const monthlyAmount = parseInt(monthly.value);
         document.getElementById("question")?.remove();
+        document.getElementById("attr")?.remove();
         const amountField = document.getElementById("amount");
         amountField!.innerText = `${amount}`;
         const perSecound = monthlyAmount/(30*24*60*60);
